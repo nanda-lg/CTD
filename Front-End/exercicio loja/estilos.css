@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://jandaiaonline.com.br/wp-content/uploads/2020/07/background-site.jpg);
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    background-color: #6805F2;
+    color: white;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 20px;
+}
+.menu a {
+    color: white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.menu a:hover {
+    color: white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 0 15px;
+}
+.menu p {
+    text-align: center;
+}
+
+#produtos {
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+}
+.produto {
+    width: 300px;
+    width: 300px;
+    display:inline-block;
+}
+h1 {
+    font-size: 18px;
+    font-family: montserrat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    text-align: center;
+    color: #010326;
+}
+.produto img{
+    margin: 15px 15px;
+    width: 255px;
+}
+.produto p {
+    font-size: 12px;
+    font-family: montserrat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: dimgray;
+}
+button {
+    padding: 10px 30px;
+    margin: 10px auto;
+    font-family: montserrat;
+    background-color:#F2CB57;  
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+button:hover {
+    padding: 10px 30px;
+    margin: 10px auto;
+    font-family: montserrat;
+    background-color:#d8b64f;  
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}

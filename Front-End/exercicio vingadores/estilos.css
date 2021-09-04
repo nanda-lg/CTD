@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
+body {background-color: #131313; }
+h1 {color: white;
+font-family: Roboto;}
+h2 {color:steelblue;}
+.media-picture { 
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 100vw;
+   height: 400px; 
+   background-image: url("./img.jpg");
+   } 
+p { color: #bdbdbd;
+    font-family: Roboto;  }
+.review-score {background-color: #e6bd09;}
+.review-score p {color: white;}
+a {color: yellow}
