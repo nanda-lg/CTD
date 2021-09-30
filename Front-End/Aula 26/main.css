@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+header {
+  background-color: #23b999;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+}
+header a {
+  color: white;
+  padding: 10px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
+
+div {
+  width: 900px;
+  height: 500px;
+  background-color: #e0e0e0;
+  padding: 30px;
+  margin: 0 auto;
+}
+div p {
+  color: #202c20;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+  text-align: center;
+  background-color: #16705d;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

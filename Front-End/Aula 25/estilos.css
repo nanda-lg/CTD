@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    text-align: center;
+    padding: 20px 0; 
+}
+.menu {
+    text-align: center;
+    color: cornsilk;
+}
+.menu a{
+    padding:0 10px;
+}
+.banner {
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+}
+
+img{
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+}
+.btn {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+.col{
+    text-align: center;
+}
+
+.navbar {
+    background-color: #e2793d;
+}
+.navbar a {
+    color:white;
+}
