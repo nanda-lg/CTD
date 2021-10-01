@@ -1,5 +1,5 @@
 // Micro Desafio - Passo 3 / Passo 4 / Passo 5 / Passo 6
-let lista_de_estudante = require("./lista");
+let lista_estudantes = require("./lista");
 let aluno = require("./func_construc");
 
 // console.log(lista);
@@ -8,10 +8,10 @@ let curso = {
     nome_do_curso: "Programação Imperativa",
     nota_de_aprov: 7,
     faltas_max: 2,
-    lista_de_estudante,
+    lista_estudantes,
     lista_nova: function (aluno) {
-        this.lista_de_estudante.push(aluno);
-        return this.lista_de_estudante;
+        this.lista_estudantes.push(aluno);
+        return this.lista_estudantes;
     },
     aprovado: function (aluno) {
         let media = aluno.calcularMedia();
@@ -27,23 +27,23 @@ let curso = {
     },
     aprovados: function () {
         let resultados = []
-        for (let i = 0; i < this.lista_de_estudante.length; i++) {
-            let media = this.lista_de_estudante[i].aluno.calcularMedia();
-            if (media >= this.nota_de_aprov && this.lista_de_estudante.aluno.quantidade_de_faltas < this.faltas_max) {
-                resultados = resultados + [true];
+        for (let i = 0; i < this.lista_estudantes.length; i++) {
+            let media = this.lista_estudantes[i].calcularMedia();
+            if (media >= this.nota_de_aprov && this.lista_estudantes[i].quantidade_de_faltas < this.faltas_max) {
+                resultados.push(true);
             }
-            else if (media >= 1.1 * this.nota_de_aprov && this.lista_de_estudante[i].aluno.quantidade_de_faltas == this.faltas_max) {
-                resultados = resultados + [true];
+            else if (media >= 1.1 * this.nota_de_aprov && this.lista_estudantes[i].quantidade_de_faltas == this.faltas_max) {
+                resultados.push(true);
             }
             else {
-                resultados = resultados + [false];
+                resultados.push(false);
             }
-            return resultados;
         }
+        return resultados;
     }
 }
 
 
 console.log(curso.aprovado(new aluno("Ana", 5, [7, 10, 10])));
-console.log(curso.aprovado(lista_de_estudante[4]));
+console.log(curso.aprovado(lista_estudantes[4]));
 console.log(curso.aprovados());
